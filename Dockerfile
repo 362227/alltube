@@ -1,6 +1,6 @@
 FROM php:7.3-apache
 RUN apt-get update
-RUN apt-get install -y aria2c 
+RUN apt install -y aria2c 
 RUN apt-get install -y libicu-dev xz-utils git python libgmp-dev unzip ffmpeg
 RUN docker-php-ext-install mbstring
 RUN docker-php-ext-install intl
